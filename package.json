@@ -1,0 +1,1 @@
+{"name":"creo-labz-site","version":"0.2.0","private":true,"description":"CREO LABZ static site","scripts":{"start":"npx --yes serve@14.2.4 ."}}
