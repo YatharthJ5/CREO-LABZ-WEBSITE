@@ -4,7 +4,7 @@
 <title>CREO LABZ — Exhibit with Perfection</title>
 <meta name="description" content="CREO LABZ — exhibition booth design & fabrication.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#fff;--ivory:#fafaf7;--grey:#f2f2ef;--stone:#e8e7e2;--ink:#171717;--mute:#777;--navy:#272b63;--teal:#00afc8;--gold:#f9b233;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#fff;--ivory:#fafaf7;--grey:#f2f2ef;--stone:#e8e7e2;--ink:#171717;--mute:#777}}
@@ -14,6 +14,8 @@ html{height:auto;scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior
 body{background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;font-weight:400;line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 button,input,select,textarea{font-family:'Inter',sans-serif}
 a{color:inherit;text-decoration:none}
+.hero-title,.build-heading,.studio-heading,.projects-heading,.services-heading,.process-heading,.contact-heading{font-family:'Inter',sans-serif;font-weight:900}
+.hero-title{font-size:clamp(37.6px,7.52vw,105.28px)}
 .lab{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute);font-weight:500}
 h1,h2{font-weight:800;text-transform:uppercase;letter-spacing:-.025em;line-height:.98}
 h1{font-size:clamp(40px,8vw,112px)}h2{font-size:clamp(34px,6vw,84px)}
@@ -151,29 +153,29 @@ footer{display:block;padding:clamp(60px,9vw,120px) clamp(20px,4vw,56px) 30px;bac
 <video autoplay muted loop playsinline aria-hidden="true"></video>
 <svg class="plan" viewBox="0 0 600 400" fill="none" stroke="#171717" stroke-width=".7" aria-hidden="true"><g opacity=".55"><path d="M40 330 300 380 560 330 300 280Z"/><path d="M40 330V190L300 240V380M560 330V190L300 240"/><path d="M40 190 300 140 560 190 300 240Z"/><path d="M150 310V170M450 310V170M300 360V220"/></g><path d="M300 140V10" stroke="#f9b233" stroke-width="3"/></svg>
 <p class="lab" style="position:relative">Exhibit with perfection</p>
-<h1 style="margin-top:14px">We create spaces<br>that make brands<br>unforgettable.</h1>
+<h1 class="hero-title" style="margin-top:14px">We create spaces<br>that make brands<br>unforgettable.</h1>
 <p>From concept to completion, we transform ideas into extraordinary exhibition experiences.</p>
 <div><button class="btn" data-enq>Start a project<svg class="ar" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
 </header>
 
 <section id="build" aria-label="Booth construction in seven stages">
 <div class="stick">
-<div class="copy"><div><p class="lab">Signature · Interactive 3D</p><h2 style="margin-top:14px">From an idea<br>to a physical experience.</h2><p style="margin-top:18px;color:#444">Designed with precision. Built with purpose.</p></div>
+<div class="copy"><div><p class="lab">Signature · Interactive 3D</p><h2 class="build-heading" style="margin-top:14px">From an idea<br>to a physical experience.</h2><p style="margin-top:18px;color:#444">Designed with precision. Built with purpose.</p></div>
 <div><p class="lab"><span id="snum">01</span> / 07</p><div id="stage" aria-live="polite"></div><div class="bar" id="bar"></div><p class="note" style="margin-top:14px">Scroll to build — scroll back to reverse. Concept illustration.</p></div></div>
 <canvas id="c" role="img" aria-label="3D exhibition booth being constructed"></canvas>
 </div></section>
 
-<section id="studio" class="studio"><h2 class="r">We design.<br>We engineer.<br>We build.</h2>
+<section id="studio" class="studio"><h2 class="studio-heading r">We design.<br>We engineer.<br>We build.</h2>
 <div class="r"><p class="lab" style="margin-bottom:16px">The studio</p><p>CREO LABZ designs and fabricates exhibition booths — from first brief to installation. One team, one standard of detail.</p></div></section>
 
-<section id="projects" class="pj"><p class="lab">Projects</p><h2 class="hd" style="margin:14px 0 14px">Selected concepts.</h2><p class="note">All six are concept projects / design demonstrations — not completed client work.</p><div id="pl"></div></section>
-<section id="services" style="background:var(--ivory)"><p class="lab">Expertise</p><h2 style="margin:14px 0 50px">Nine disciplines.</h2>
+<section id="projects" class="pj"><p class="lab">Projects</p><h2 class="projects-heading hd" style="margin:14px 0 14px">Selected concepts.</h2><p class="note">All six are concept projects / design demonstrations — not completed client work.</p><div id="pl"></div></section>
+<section id="services" style="background:var(--ivory)"><p class="lab">Expertise</p><h2 class="services-heading" style="margin:14px 0 50px">Nine disciplines.</h2>
 <div class="svc"><a href="#contact"><b>Exhibition Booth Design</b><span class="lab">01</span></a><a href="#contact"><b>3D Exhibition Stall Design</b><span class="lab">02</span></a><a href="#contact"><b>Custom Stall Fabrication</b><span class="lab">03</span></a><a href="#contact"><b>Modular Exhibition Stands</b><span class="lab">04</span></a><a href="#contact"><b>Pavilion Design & Fabrication</b><span class="lab">05</span></a><a href="#contact"><b>Brand Activation & Experience Zones</b><span class="lab">06</span></a><a href="#contact"><b>Retail Display & Kiosk Design</b><span class="lab">07</span></a><a href="#contact"><b>Exhibition Installation & Dismantling</b><span class="lab">08</span></a><a href="#contact"><b>Turnkey Exhibition Solutions</b><span class="lab">09</span></a></div></section>
 
-<section id="process"><p class="lab">Process</p><h2 style="margin:14px 0 50px">Six stages.</h2>
+<section id="process"><p class="lab">Process</p><h2 class="process-heading" style="margin:14px 0 50px">Six stages.</h2>
 <div class="proc"><div class="r"><em>01</em><h3>Discovery & Briefing</h3></div><div class="r"><em>02</em><h3>Concept & Strategy</h3></div><div class="r"><em>03</em><h3>3D Design & Visualisation</h3></div><div class="r"><em>04</em><h3>Engineering & Fabrication</h3></div><div class="r"><em>05</em><h3>Installation & Execution</h3></div><div class="r"><em>06</em><h3>Handover & Support</h3></div></div></section>
 
-<section id="contact" class="contact"><p class="lab">Contact</p><h2 style="margin-top:14px">Have a space<br>worth creating?</h2>
+<section id="contact" class="contact"><p class="lab">Contact</p><h2 class="contact-heading" style="margin-top:14px">Have a space<br>worth creating?</h2>
 <div class="cgrid"><div><p style="margin-bottom:24px;font-size:20px;font-weight:700">Let's build it.</p>
 <p><a href="mailto:arvind@creolabz.com">arvind@creolabz.com</a></p><p><a href="tel:+919211960402">+91 9211960402</a></p><p>creolabz.com</p>
 <p style="margin-top:24px"><a class="btn" href="https://wa.me/919211960402" target="_blank" rel="noopener">WhatsApp</a></p></div>
